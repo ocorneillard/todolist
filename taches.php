@@ -1,14 +1,10 @@
 <?php
 
-function isExist($var){
-  if (isset($var)){
-    echo $var;
-  }
-}
+
 
 if(isset($_POST['submit'])){
-
-$taches = $_POST[]
+$taches = $_POST["taches"] ;
+}
 
 
 
@@ -26,10 +22,10 @@ $taches = $_POST[]
  </head>
  <body>
      <div class="add">
-       <input id="taches" placeholder="Completer une tâche" autofocus="" type="text" name="taches">
-       <button type="submit" name="submit" class="btn style">Ajouter</button>
-     </div><br>
-
-     <form method="POST" action="todo.php">
+       <form method="POST" action="taches.php">
+         <input id="taches" placeholder="Completer une tâche" autofocus="" type="text" name="taches">
+         <button type="submit" name="submit" value="envoyer" class="btn style">Ajouter</button>
+      </form>
+     </div>
  </body>
  </html>
