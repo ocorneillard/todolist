@@ -3,8 +3,22 @@
 
 
 if(isset($_POST['submit'])){
-$taches = $_POST["taches"] ;
-}
+  $taches = filter_var($_POST['taches'], FILTER_SANITIZE_STRING);
+  $taches = trim($taches);
+  echo $taches;
+
+  if (empty($taches) || !isset($taches)) {
+    $veriftaches = "pok";
+  } else {
+    $veriftaches = "ok";
+  }
+
+  if ($veriftaches == "ok") {
+    // Envoyer donné vers JSON
+    echo "envoi en cours";
+  }
+  }
+
 
 
 

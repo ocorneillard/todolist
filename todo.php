@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,24 +9,27 @@
   <title>List to do</title>
 </head>
 <body>
-    <div class="formulaire">
-      <label>A faire.</label>
-      <div section="list">
-        <ul>
-					<li><input type="checkbox" name="tache" value="">Créer un repo.</li>
-					<li><input type="checkbox" name="tache" value="">Faire une sanitisation/validation.</li>
-					<li><input type="checkbox" name="tache" value="">Comprendre JSON.</li>
-          <li><input type="checkbox" name="tache" value="">Publie ton app sur Heroku.</li>
-          <li><input type="checkbox" name="tache" value="">Faire un readme de qualité.</li>
-				</ul>
-          <p>
+    <form class="" action="index.html" method="post">
+
+      <?php
+      // récupérer les données JSON venant de taches.php
+
+      $contenu_fichier_json = file_get_contents('todo.json');
+      /* Les données sont récupérées sous forme de tableau (true) */
+      $tr = json_decode($contenu_fichier_json, true);
+
+      foreach ($tr as $key => $value) {
+        echo "<li><input type=\"checkbox\" name=\"tache\"> $value </li>";
+      }
+
+        ?>
+        <p>
           <button type="submit" name="submit" class="btn style">Enregistrer</button>
-          </p>
-      </div>
+        </p>
+    </form>
+      <label>A faire.</label>
 
 
 
-
-    </div>
 </body>
 </html>
