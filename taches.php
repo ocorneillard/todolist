@@ -15,7 +15,8 @@ if(isset($_POST['submit'])){
 
   if ($veriftaches == "ok") {
     // Envoyer donné vers JSON
-    echo "envoi en cours";
+    $var = json_encode($taches);
+    file_put_contents('todo.json', $var);
   }
   }
 

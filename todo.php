@@ -9,18 +9,18 @@
   <title>List to do</title>
 </head>
 <body>
-    <form class="" action="index.html" method="post">
+    <form class="" action="#" method="post">
 
       <?php
       // récupérer les données JSON venant de taches.php
 
-      $contenu_fichier_json = file_get_contents('todo.json');
+      $contenu = file_get_contents('todo.json');
       /* Les données sont récupérées sous forme de tableau (true) */
-      $tr = json_decode($contenu_fichier_json, true);
-
-      foreach ($tr as $key => $value) {
-        echo "<li><input type=\"checkbox\" name=\"tache\"> $value </li>";
-      }
+      $tr = json_decode($contenu);
+      print_r($tr);
+      // foreach ($tr as $key => $value) {
+      //   echo "<li><input type=\"checkbox\" name=\"tache\"> $value </li>";
+      // }
 
         ?>
         <p>

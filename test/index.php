@@ -5,12 +5,6 @@ if (isset($_POST["submit"])) {
     $var = json_encode($_POST['test']);
     file_put_contents('todo.json', $var);
 
-    // $test = ['todo' => $_POST["test"] ];
-    // $url = "todo.json";
-    // $jsontest = json_encode($test) ;
-    // file_put_contents('todo.json',$url);
-
-
   }
 }
 
