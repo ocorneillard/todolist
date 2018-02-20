@@ -5,11 +5,12 @@
 if(isset($_POST['submit'])){
   $contenu = file_get_contents('todo.json');
   $contenu = get_object_vars(json_decode($contenu));
+
+  // Changement d'array
   $contenu['number'] = $contenu['number'] +1 ;
   $tache = filter_var($_POST['tache'], FILTER_SANITIZE_STRING);
   $tache = trim($tache);
   $contenu['tache'.$contenu['number']] = $tache;
-  print_r($contenu);
 
   if (empty($tache) || !isset($tache)) {
     $veriftaches = "pok";
@@ -43,7 +44,7 @@ if(isset($_POST['submit'])){
  </head>
  <body>
      <div class="add">
-       <form method="POST" action="taches.php">
+       <form method="POST" action="#">
          <input id="taches" placeholder="Completer une tâche" autofocus="" type="text" name="tache">
          <button type="submit" name="submit" value="envoyer" class="btn style">Ajouter</button>
       </form>

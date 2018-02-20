@@ -17,7 +17,6 @@
       // récupérer les données JSON venant de taches.php
       $contenu = file_get_contents('todo.json');
       $tr = get_object_vars(json_decode($contenu));
-      print_r($tr);
       foreach ($tr as $key => $value) {
         if ($key == 'number') {
         } else {
@@ -29,26 +28,19 @@
        foreach ($tr as $key => $value) {
         if ($_POST[$key] != $_POST['ok']) {
             // $contenu['tache'.$contenu['number']] = $tache;
-            $contenu__archives[$key] = $value;
-        } elseif ($key == 'number') {
+            $contenu_archives[$key] = $value;
         } else {
           $contenu_todo[$key] = $value;
           $number = $number + 1;
-          echo "$key $value $number TEST <br/>";
         }
        }
 
-       $send_archives = json_encode($contenu__archives);
+       $send_archives = json_encode($contenu_archives);
        file_put_contents('archives.json', $send_archives);
        $send_todo = json_encode($contenu_todo);
        file_put_contents('todo.json', $send_todo);
+       header("LOCATION: index.php");
       }
-
-      $contenu_todo['number']= $number;
-      echo "<br>";
-       print_r($contenu__archives) ;
-       echo "<br>";
-       print_r($contenu_todo);
 
         ?>
         <p>
