@@ -1,3 +1,5 @@
+<div class="archives">
+
 
       <?php
       $contenu = file_get_contents('archives.json');
@@ -6,7 +8,7 @@
       foreach ($tr as $key => $value) {
         if ($key == 'number') {
         } else {
-          echo "<li><s><input type=\"checkbox\" checked=\"checked\"> $value </s></li>";
+          echo "<s><input type=\"checkbox\" checked=\"checked\"> $value </s>";
         }
       }
       if (   isset($_POST['sub']) && !empty($_POST['sub'])   ) {
@@ -16,6 +18,10 @@
         header("LOCATION: index.php");
       }
       ?>
-  <form class="" action="#" method="post">
-    <input type="submit" name="sub" value="Effacer">
+
+
+  <form class="delete" action="#" method="post">
+    <input class="buttoneff" type="submit" name="sub" value="Effacer">
   </form>
+
+</div>

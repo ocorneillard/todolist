@@ -9,7 +9,7 @@
       foreach ($tr as $key => $value) {
         if ($key == 'number') {
         } else {
-          echo "<li><input type=\"checkbox\" name=\"$key\" value=\"ok\"> $value </li>";
+          echo "<p><input type=\"checkbox\" name=\"$key\" value=\"ok\"> $value</p>";
         }
       }
       $contenu_archives = json_decode(file_get_contents('archives.json'),true);
@@ -33,6 +33,6 @@
 
         ?>
         <p>
-          <button type="submit" name="submit" value="envoie">Enregistrer</button>
+          <button type="submit" name="submit" value="button2">Enregistrer</button>
         </p>
     </form>

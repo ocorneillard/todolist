@@ -1,0 +1,28 @@
+body {
+  background-color:: #eeeeee; font-family: Verdana, Geneva, Arial; font-size : 15px;
+  border-style: inset 10px;
+  padding: 5em;
+  margin-left: 35vh;
+  margin-right: 35vh;
+}
+
+.add {
+  background-color: #25c5da;
+
+  text-align: center;
+
+}
+
+.todo {
+  background-color: #25c5da;
+
+  text-align: center;
+
+}
+
+.archives {
+  background-color: #25c5da;
+  
+  text-align: center;
+
+}

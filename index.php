@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header>
+      <h2>Listing des tâches a effectuer cette semaine.</h2>
+    </header>
+
+
     <?php
       require 'todo.php';
      ?>

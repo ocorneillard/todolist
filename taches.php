@@ -36,7 +36,10 @@ if(isset($_POST['submit'])){
 
      <div class="add">
        <form method="POST" action="#">
+         <p>
          <input id="taches" placeholder="Completer une tâche" autofocus="" type="text" name="tache">
-         <button type="submit" name="submit" value="envoyer" class="btn style">Ajouter</button>
+        <p>
+         <button type="submit" name="submit" value="envoyer" class="button">Ajouter</button>
+       </p>
       </form>
      </div>

@@ -1,0 +1,207 @@
+body {
+  background-position: center;
+  background: white;
+  color: #25c5aa;
+  padding: 3em;
+  margin-left: 35vh;
+  margin-right: 35vh;
+  background-image: black;
+}
+
+header{
+
+  text-align: center;
+  text-decoration: underline;
+}
+
+.add, .archives, .fa{
+  text-align: left;
+  border: solid black;
+  background-color: #f9e77c;
+}
+
+.add {
+
+  display: run-in;
+  padding: 25px;
+  text-align: center;
+
+}
+
+
+.fa {
+  height: 100%;
+  padding: 25px;
+  text-align: center;
+
+}
+
+.delete {
+  padding: 25px;
+  text-align: center;
+
+}
+
+.archives {
+  padding: 25px;
+  text-align: center;
+}
+
+.button{
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 5;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 230px;
+  margin: 0 10px 10px;
+  font: 300 14px/50px "Oswald", sans-serif;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  border: 2px inset #fff;
+  background: #ffffff;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.button{
+  background: #c52f2f;
+  border-color: #303030;
+  -moz-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -o-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -webkit-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+}
+
+.button:hover{
+  border-radius: 34px;
+  background: #25c5aa;
+  color: #fff;
+  border-color: green;
+  box-shadow: 1px;
+}
+
+
+.buttoneff{
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 5;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 230px;
+  margin: 0 10px 10px;
+  font: 300 14px/50px "Oswald", sans-serif;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  border: 2px inset #fff;
+  background: #ffffff;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.buttoneff{
+  background: #c52f2f;
+  border-color: #303030;
+  -moz-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -o-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -webkit-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+}
+
+.buttoneff:hover{
+  border-radius: 34px;
+  background: #25c5aa;
+  color: #fff;
+  border-color: black;
+  box-shadow: 1px;
+}
+
+
+.button{
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 5;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 230px;
+  margin: 0 10px 10px;
+  font: 300 14px/50px "Oswald", sans-serif;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  border: 2px inset #fff;
+  background: #ffffff;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.button{
+  background: #c52f2f;
+  border-color: #303030;
+  -moz-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -o-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -webkit-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+}
+
+.button:hover{
+  border-radius: 34px;
+  background: #25c5aa;
+  color: #fff;
+  border-color: green;
+  box-shadow: 1px;
+}
+
+
+p button{
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 5;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 230px;
+  margin: 0 10px 10px;
+  font: 300 14px/50px "Oswald", sans-serif;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  border: 2px inset #fff;
+  background: #ffffff;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+}
+
+p button{
+  background: #c52f2f;
+  border-color: #303030;
+  -moz-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -o-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -webkit-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+}
+
+p button:hover{
+  border-radius: 34px;
+  background: #25c5aa;
+  color: #fff;
+  border-color: black;
+  box-shadow: 1px;
+}
