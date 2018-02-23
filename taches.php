@@ -19,7 +19,3 @@ if(isset($_POST['submit'])){
     }
   }
  ?>
-  <form method="POST" action="#">
-    <input placeholder="Completer une tâche" autofocus="" type="text" name="tache">
-    <button type="submit" name="submit" value="envoyer" class="button">To do</button>
-  </form>

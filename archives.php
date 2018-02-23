@@ -1,4 +1,4 @@
-<form action="#" method="post">
+
   <?php
     $contenu = file_get_contents('archives.json');
     $tr = json_decode($contenu,true);
@@ -16,5 +16,3 @@
         header("LOCATION: index.php");
       }
    ?>
-  <input type="submit" name="sub" value="Erase">
-</form>

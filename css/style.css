@@ -1,18 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
+
+
+
+
 body {
   text-align: center;
   margin : 0;
   padding : 5vh 5vw;
   background: #4d4559;
-  font-family: 'Crafty Girls', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   font-size : 20px;
-  font-weight : bolder;
+  color: #a6a6a6;
 }
 
 
 main {
   display: grid;
   height : 90vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2fr 1fr;
 }
 
@@ -22,12 +28,9 @@ main {
   min-height : 400px;
   min-width : 600px;
   border-radius : 50px;
-  background-color: #6E627F;
-  transform : rotate(50deg);
 }
 
 .section--txt {
-  transform : rotate(-50deg);
 }
 
 .empty {
@@ -48,4 +51,108 @@ main {
  grid-row: 2;
  margin : auto;
  padding : 10vh 30vw;
+}
+
+/*                  GRID IN GRID                          */
+
+.section--txt--grid {
+  display: grid;
+  grid-template-columns : "section--txt--grid1 section--txt--grid2";
+}
+
+.section--txt--grid1 {
+  min-height : 370px;
+  text-align : justify;
+  padding-left : 20%;
+}
+
+/*                     BTN TACHE                        */  /*                                                     */
+
+.row {
+
+}
+
+
+.row span {
+  position: relative;
+  display: inline-block;
+  margin: 30px 10px 30px 0px;
+}
+
+.balloon {
+  display: inline;
+  width: 310px; /* largeur */
+  padding: 10px 0 10px 15px; /* important, taille (longeur) de l'input */
+  font-weight: bolder;
+  color: #a6a6a6;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  text-indent: 60px; /* mets le textholder plus à droite */
+  transition: all .3s ease-in-out; /* transition txtholder */
+}
+
+.balloon + label {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  bottom: 8px;
+  padding: 5px 15px;
+  color: #032429;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, 0);
+  transition: all .3s ease-in-out;
+  border-radius: 3px;
+  background: rgba(122, 184, 147, 0);
+}
+.balloon + label:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 50%;
+  margin-left: -3px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid rgba(122, 184, 147, 0);
+  transition: all .3s ease-in-out;
+}
+
+.balloon:focus,
+.balloon:active {
+  color: grey; /* couleur du txtholder */
+  text-indent: 0;
+  background: #fff; /* couleur après transition */
+}
+
+
+
+
+/* label */
+
+.balloon:focus + label,
+.balloon:active + label {
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+  background: #7ab893;
+  transform: translateY(-40px);
+}
+.balloon:focus + label:after,
+.balloon:active + label:after {
+  border-top: 4px solid #7ab893;
+}
+
+
+/* BTN */
+
+.taches--btn {
+  padding: 10px;
+  color : grey;
+  background : white;
+  border : none;
+  border-radius : 3px;
 }

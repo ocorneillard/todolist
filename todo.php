@@ -1,5 +1,3 @@
-    <form class="fa" action="#" method="post">
-      <table>
       <?php
       $number = 0;
       // récupérer les données JSON venant de taches.php
@@ -31,6 +29,3 @@
        header("LOCATION: index.php");
       }
         ?>
-      </table>
-      <button type="submit" name="submit" value="button2">Done</button>
-    </form>
