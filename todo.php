@@ -1,6 +1,5 @@
-
     <form class="fa" action="#" method="post">
-
+      <table>
       <?php
       $number = 0;
       // récupérer les données JSON venant de taches.php
@@ -9,8 +8,9 @@
       foreach ($tr as $key => $value) {
         if ($key == 'number') {
         } else {
-          echo "<p><input type=\"checkbox\" name=\"$key\" value=\"ok\"> $value</p>";
-        }
+          echo "<p><input type=\"checkbox\" name=\"$key\" value=\"ok\"> $value </p>";
+
+          }
       }
       $contenu_archives = json_decode(file_get_contents('archives.json'),true);
       if (isset($_POST['submit'])) {
@@ -30,9 +30,7 @@
        file_put_contents('todo.json', $send_todo);
        header("LOCATION: index.php");
       }
-
         ?>
-        <p>
-          <button type="submit" name="submit" value="button2">Enregistrer</button>
-        </p>
+      </table>
+      <button type="submit" name="submit" value="button2">Done</button>
     </form>

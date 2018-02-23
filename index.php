@@ -3,24 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css?family=Crafty+Girls" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <h2>Listing des tâches a effectuer cette semaine.</h2>
-    </header>
+    <main>
+      <section class="section">
+        <div class="section--txt">
+          <?php
+            require 'todo.php';
+           ?>
+        </div>
+      </section>
+      <div class="empty">
 
+      </div>
+      <aside class="done">
+        <?php
+         require 'archives.php';
+         ?>
+      </aside>
 
-    <?php
-      require 'todo.php';
-     ?>
-
-     <?php
-      require 'archives.php';
-      ?>
-
-      <?php
-        require 'taches.php';
-       ?>
+      <footer class="todo">
+        <?php
+          require 'taches.php';
+         ?>
+      </footer>
+    </main>
   </body>
 </html>
