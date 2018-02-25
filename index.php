@@ -10,7 +10,6 @@
   <body>
     <main>
       <section class="section">
-        <div class="section--txt">
           <div class="section--txt--grid">
             <div class="section--txt--grid1">
               <form class="fa" action="#" method="post">
@@ -19,24 +18,33 @@
                ?>
             </div>
             <div class="section--txt--grid2">
-              <button type="submit" name="submit" value="button2">Done</button>
+              <button class="section--btn" type="submit" name="submit" value="button2">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
             </form>
             </div>
           </div>
 
-        </div>
       </section>
       <div class="empty">
-
+        <h3>
+          Do it
+        </h3>
       </div>
       <aside class="done">
         <form action="#" method="post">
-        <?php
-         require 'archives.php';
-         ?>
-         <button type="submit" name="sub" value="mit">
-           <i class="fas fa-eraser"></i>
-         </button>
+          <div class="done--txt--grid">
+            <div class="done--txt--grid1">
+              <?php
+               require 'archives.php';
+               ?>
+            </div>
+            <div class="done--txt--grid2">
+              <button class="done--btn" type="submit" name="sub" value="mit">
+                <i class="fas fa-eraser"></i>
+              </button>
+            </div>
+          </div>
        </form>
       </aside>
 

@@ -6,11 +6,12 @@
     foreach ($tr as $key => $value) {
       if ($key == 'number') {
        } else {
-        echo "<p><s><input type=\"checkbox\" checked=\"checked\"> $value </s></p>";
+         echo "<input id=\"$key\" type=\"checkbox\" name=\"$key\" value=\"ok\" checked disabled=\"disabled\">";
+         echo "<label for=\"$key\"><span class=\"check\">✓</span> $value</label>";
        }
       }
       if (   isset($_POST['sub']) && !empty($_POST['sub'])   ) {
-        $erase = "";
+        $erase = null;
         $erase = json_encode($erase);
         file_put_contents('archives.json',$erase);
         header("LOCATION: index.php");

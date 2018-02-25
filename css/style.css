@@ -7,13 +7,11 @@ body {
   text-align: center;
   margin : 0;
   padding : 5vh 5vw;
-  background: #4d4559;
+  background: #99806F;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size : 20px;
-  color: #a6a6a6;
 }
-
 
 main {
   display: grid;
@@ -22,20 +20,27 @@ main {
   grid-template-rows: 2fr 1fr;
 }
 
+h3 {
+  color : #D3D8F2;
+}
+
 .section {
   margin: auto;
-  text-align: center;
   min-height : 400px;
   min-width : 600px;
   border-radius : 50px;
+  color : #D3D8F2;
 }
 
-.section--txt {
-}
 
 .empty {
-  min-width : 0px;
-  background-color : #4d4559;
+  min-width : 400px;
+  background-image: url("../img/man.jpg");
+  background-size: cover;
+  border-radius : 500px;
+  -webkit-box-shadow: -1px 3px 17px 6px rgba(191,102,71,1);
+  -moz-box-shadow: -1px 3px 17px 6px rgba(191,102,71,1);
+  box-shadow: -1px 3px 17px 6px rgba(191,102,71,1);
 }
 
 .done {
@@ -43,14 +48,13 @@ main {
   min-height : 400px;
   min-width : 600px;
   border-radius : 50px;
-  background-color: #6E627F;
+  color : #FFC4B2;
 }
 
 .todo {
  grid-column: 1  / span 3;
  grid-row: 2;
  margin : auto;
- padding : 10vh 30vw;
 }
 
 /*                  GRID IN GRID                          */
@@ -62,15 +66,21 @@ main {
 
 .section--txt--grid1 {
   min-height : 370px;
-  text-align : justify;
-  padding-left : 20%;
+  text-align : center;
 }
 
+.done--txt--grid {
+  display: grid;
+  grid-template-columns: "done--txt--grid1 done--txt--grid2";
+}
+
+.done--txt--grid1 {
+  min-height : 370px;
+  text-align : center;
+  padding : 0 100px;
+}
 /*                     BTN TACHE                        */  /*                                                     */
 
-.row {
-
-}
 
 
 .row span {
@@ -81,15 +91,15 @@ main {
 
 .balloon {
   display: inline;
-  width: 310px; /* largeur */
+  width: 20vw; /* largeur */
   padding: 10px 0 10px 15px; /* important, taille (longeur) de l'input */
   font-weight: bolder;
-  color: #a6a6a6;
-  background: #efefef;
+  color: #D3D8F2;
+  background: #42748C;
   border: 0;
   border-radius: 3px;
   text-indent: 60px; /* mets le textholder plus à droite */
-  transition: all .3s ease-in-out; /* transition txtholder */
+  transition: all 0.3s ease-in-out; /* transition txtholder */
 }
 
 .balloon + label {
@@ -124,9 +134,9 @@ main {
 
 .balloon:focus,
 .balloon:active {
-  color: grey; /* couleur du txtholder */
+  color: #42748C; /* couleur du txtholder */
   text-indent: 0;
-  background: #fff; /* couleur après transition */
+  background: #D3D8F2; /* couleur après transition */
 }
 
 
@@ -137,22 +147,91 @@ main {
 .balloon:focus + label,
 .balloon:active + label {
   color: #fff;
-  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
-  background: #7ab893;
+  text-shadow: 0 1px 0 #42748C;
+  background: #42748C;
   transform: translateY(-40px);
 }
 .balloon:focus + label:after,
 .balloon:active + label:after {
-  border-top: 4px solid #7ab893;
+  border-top: 4px solid #42748C;
 }
 
 
 /* BTN */
 
-.taches--btn {
-  padding: 10px;
-  color : grey;
-  background : white;
+.taches--btn, .done--btn, .section--btn {
+  padding: 10px 30px;
+  color : #FFCBB2;
+  background : #BF6647;
   border : none;
   border-radius : 3px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.taches--btn:hover, .done--btn:hover, .section--btn:hover {
+  background : #D3D8F2;
+  color: #BF6647;
+}
+.taches--btn:active, .done--btn:active, .section--btn:active {
+  transform : translateY(5px);
+  background : #D3D8F2;
+  color: #BF6647;
+}
+
+/* CHECKBOX */
+
+
+/* INPUT type  */
+
+
+.section--txt--grid1 label  {
+    display:block;
+    padding : 10px 20px;
+    border : 1px solid #D3D8F2;
+    width : 100%;
+    border-radius:40px;
+    -webkit-font-smoothing: antialiased;
+    margin:10px;
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.done--txt--grid1 label {
+  display:block;
+  padding : 10px;
+  border-radius:40px;
+  -webkit-font-smoothing: antialiased;
+  margin-top:10px;
+  transition: all .3s ease-in-out;
+  font-size: 16px;
+  font-weight: 700;
+  background: #99806F;
+  color: #42748C;
+  content: "\2713 ";
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:hover + label {
+  background: #42748C;
+  color : #D3D8F2;
+  border : 1px solid #42748C;
+}
+
+input:checked + label {
+    background: #99806F;
+    color: #42748C;
+    border : 1px solid #99806F;
+}
+
+.check {
+    visibility: hidden;
+}
+
+input:checked + label .check {
+    visibility: visible;
 }

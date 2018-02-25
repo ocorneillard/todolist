@@ -1,12 +1,12 @@
       <?php
-      $number = 0;
       // récupérer les données JSON venant de taches.php
       $contenu = file_get_contents('todo.json');
       $tr = json_decode($contenu, true);
       foreach ($tr as $key => $value) {
         if ($key == 'number') {
         } else {
-          echo "<p><input type=\"checkbox\" name=\"$key\" value=\"ok\"> $value </p>";
+          echo "<input id=\"$key\" type=\"checkbox\" name=\"$key\" value=\"ok\">";
+          echo "<label for=\"$key\"><span class=\"check\">✓</span> $value</label>";
 
           }
       }
