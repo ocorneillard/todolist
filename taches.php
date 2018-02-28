@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
   $tache = trim($tache);
   $contenu['tache'.$contenu['number']] = $tache;
 
-    if (empty($tache) || !isset($tache)) {
+    if (empty($tache) && !isset($tache)) {
       $veriftaches = "pok";
     } else {
       $veriftaches = "ok";
