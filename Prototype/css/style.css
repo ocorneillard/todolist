@@ -1,0 +1,189 @@
+body {
+  background-image: url(images/emma-matthews-558684-unsplash.jpg);
+  color: #85bb00;
+  text-decoration: inherit;
+  padding: 3em;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 20px;
+
+}
+
+
+header {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.add, .archives, .fa{
+  border: solid white;
+  background-color: #f9e77c;
+}
+
+.add {
+  border-color: #85bb00;
+  border-radius: 15px;
+  margin: 50px;
+  padding: 10px;
+  text-align: left;
+
+}
+
+
+.fa {
+  border-color: #85bb00;
+  border-radius: 15px;
+  margin: 50px;
+  padding: 10px;
+  text-align: left;
+
+}
+
+.archives {
+  border-color: #85bb00;
+  border-radius: 15px;
+  margin: 50px;
+  padding: 25px;
+  text-align: left;
+}
+
+
+.button{
+  position: relative;
+  top: 0px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5;
+  -moz-transition: all 6.9s linear;
+  -o-transition: all 6.9s linear;
+  -webkit-transition: all 6.9s linear;
+  transition: all 6.2s linear;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 180px;
+  font: 300 14px/50px "Oswald", sans-serif;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  border: 2px inset #fff;
+  background: #ffffff;
+  color: white;
+  margin: 0;
+}
+
+.button{
+  background: #85bb00;
+  border-color: #303030;
+  -moz-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -o-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -webkit-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+}
+
+.button:hover{
+  border-radius: 34px;
+  background: #c52f2f;
+  color: #fff;
+  border-color: black;
+  box-shadow: 1px;
+}
+
+
+.buttoneff{
+  position: relative;
+  left: 384px;
+  top: -50px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-top: 0;
+  padding-bottom: ;
+  width: 180px;
+  margin: 0 10px 10px;
+  font: 300 14px/50px "Oswald", sans-serif;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  border: 2px inset #fff;
+  background: #ffffff;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.fa h3{
+
+}
+
+.archives h3{
+
+}
+
+.add h3{
+  text-align: center;
+
+}
+
+.buttoneff{
+  background: #85bb00;
+  border-color: #303030;
+  -moz-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -o-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -webkit-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+}
+
+.buttoneff:hover{
+  border-radius: 34px;
+  background: #c52f2f;
+  color: #fff;
+  border-color: black;
+  box-shadow: 1px;
+}
+
+
+p button{
+  position: relative;
+  left: 400px;
+  top: 10px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 180px;
+  margin: 0 10px 10px;
+  font: 300 14px/50px "Oswald", sans-serif;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  border: 2px inset #fff;
+  background: #ffffff;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+}
+
+p button{
+  background: #85bb00;
+  border-color: #303030;
+  -moz-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -o-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  -webkit-transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+  transition: background 0.15s linear, border-color 0.35s ease-out, border-radius 0.25s ease-out, letter-spacing ease-in, color 0.2s;
+}
+
+p button:hover{
+  border-radius: 34px;
+  background: #c52f2f;
+  color: #fff;
+  border-color: black;
+  box-shadow: 1px;
+}

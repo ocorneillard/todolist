@@ -28,6 +28,4 @@
        file_put_contents('todo.json', $send_todo);
        header("LOCATION: index.php");
       }
-
-
         ?>
